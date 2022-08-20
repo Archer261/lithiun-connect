@@ -41,22 +41,24 @@ nav .nav-button {
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 10px;
+    border: none;
+    margin: 10px;
 }
-
-nav .logo-container .logo {
-    max-width: 100%;
-    }
 
 nav .logo-container {
     width: 170px;
     margin: 15px;
 }
 
-/* ----- Home Page ----- */
 
+nav .logo-container .logo {
+    width: 100%;
+    }
+
+/* ----- Home Page ----- */
 .overlay {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     position: fixed;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(181,255,190,1) 100%);
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(42,255,206,1) 100%);
 }
