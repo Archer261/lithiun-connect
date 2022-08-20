@@ -1,0 +1,62 @@
+@import url(https://fontlibrary.org//face/blogger-sans-bold-otf);
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'BloggerSansBold', sans-serif;
+}
+
+.primary-button {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 42%, rgba(22,22,147,1) 88%) ;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+.primary-button:hover {
+    background: linear-gradient(260deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 42%, rgba(22,22,147,1) 88%);
+}
+
+body {
+    text-align: center;
+}
+
+/* ----- Nav ----- */
+
+nav {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+nav .nav-button {
+    color: rgba(22,22,147,1);
+    background-color: rgba(255,255,255);
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+nav .logo-container .logo {
+    max-width: 100%;
+    }
+
+nav .logo-container {
+    width: 170px;
+    margin: 15px;
+}
+
+/* ----- Home Page ----- */
+
+.overlay {
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(181,255,190,1) 100%);
+}
