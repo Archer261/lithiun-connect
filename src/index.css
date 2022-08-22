@@ -16,7 +16,9 @@ h2 {
 
 .primary-title {
     font-size: 90px;
-    color: rgb(139, 14, 0);
+    color: white;
+	-webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 2px 4px blue;
 }
 
 .primary-button {
@@ -82,16 +84,18 @@ nav .logo-container {
 
 
 nav .logo-container .logo {
-    width: 50%;
+    width: 100%;
     }
 
 /* ----- Home Page ----- */
 .overlay {
-    background-image:url("images/pexels-jeshootscom-442576\ \(1\).jpg");
     width: 100vw;
     height: 100vh;
     position: fixed;
     /*background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(42,255,206,1) 100%);*/
+    background-image:url("images/pexels-jeshootscom-442576.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .home {
@@ -130,3 +134,11 @@ nav .logo-container .logo {
     margin: 8px;
     font-size: 17px;
 }
+
+
+/*Media Query
+  @media screen and (max-width: 1920px) {
+    .overlay {
+        background-size:cover;
+    }
+  }*/

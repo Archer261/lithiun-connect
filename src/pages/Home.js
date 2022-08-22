@@ -10,7 +10,7 @@ import {useState} from 'react'
 const Home = () => {
 
 const[showModal, setShowModal] = useState(false)
-const [isSignUp, setIsSignUp] =useState(true)
+const [isSignUp, setIsSignUp] = useState(true)
 
 const authToken = false;
 
