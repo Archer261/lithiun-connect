@@ -1,7 +1,7 @@
 import {useState} from 'react';
 
 import React from 'react';
-const AuthModal = ({setShowModal}) => {
+const AuthModal = ({setShowModal, isSignUp}) => {
 
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
@@ -9,8 +9,6 @@ const AuthModal = ({setShowModal}) => {
     const [error, setError] = useState(null);
 
     console.log(email, password, confirmPassword)
-
-    const isSignUp = true
 
     const handleClick = () => {
         setShowModal(false)
@@ -37,7 +35,7 @@ console.log(err);
                 <p>By clicking Log In, you agree to our terms. Learn how we process your data in our Privacy Policy and Cookie Policy</p>
                 <form onSubmit={handleSubmit}>
                     <input type='email' id='email' name='email' placeholder='Email' required={true} onChange={(e) => setEmail(e.target.value)}/>
-                    <input type='password' id='password' name='password' placeholder='Password' required={true} onChange={(e) => setPassword(e.target.value)}/>
+                   {isSignUp && <input type='password' id='password' name='password' placeholder='Password' required={true} onChange={(e) => setPassword(e.target.value)}/>}
                     <input type='password' id='confirmPassword' name='confirmPassword' placeholder='Confirm Password' required={true} onChange={(e) => setConfirmPassword(e.target.value)}/>
                     <input className="secondary-btn" type='submit'/>
                     <p>{error}</p>

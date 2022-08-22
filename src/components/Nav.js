@@ -1,11 +1,14 @@
 import logo from '../images/logo1.png';
 import whiteLogo from '../images/white_logo1.png';
 import React from 'react';
-const Nav = ({minimal, authToken, setShowModal, showModal}) => {
+const Nav = ({minimal, setShowModal, showModal, setIsSignUp}) => {
 
     const handleClick = () => {
         setShowModal(true)
+        setIsSignUp(false)
     }
+
+    const authToken = true
 
     return (
         <nav>
