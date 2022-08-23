@@ -94,7 +94,7 @@ const Onboarding = () => {
                 name="gamer_identity"
                 value="man"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gamer_identity === "man"}
               />
               <label htmlFor="male-gamer">Man</label>
 
@@ -102,9 +102,9 @@ const Onboarding = () => {
                 id="female-gamer"
                 type="radio"
                 name="gamer_identity"
-                value="female"
+                value="woman"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gamer_identity === "woman"}
               />
               <label htmlFor="female-gamer">Woman</label>
             </div>
@@ -115,48 +115,48 @@ const Onboarding = () => {
               type="checkbox"
               name="show_gender"
               onChange={handleChange}
-              checked={false}
+              checked={formData.show_gender}
             />
 
             <label>Show Me</label>
             <div className="multiple-input-container">
               <input
-                id="online-gaming"
+                id="online-gaming-interest"
                 type="radio"
-                name="online_gaming"
+                name="gaming_interest"
                 value="online"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gaming_interest === "online"}
               />
               <label htmlFor="online-gaming-interest">Online Gaming</label>
 
               <input
-                id="lan-gaming"
+                id="lan-gaming-interest"
                 type="radio"
-                name="lan_gaming"
+                name="gaming_interest"
                 value="lan"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gaming_interest === "lan"}
               />
               <label htmlFor="lan-gaming-interest">LAN Gaming</label>
 
               <input
-                id="tc-gaming"
+                id="tc-gaming-interest"
                 type="radio"
-                name="tc_gaming"
+                name="gaming_interest"
                 value="tcg"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gaming_interest === "tcg"}
               />
               <label htmlFor="tc-gaming-interest">Trading Card Gaming</label>
 
               <input
-                id="all-gaming"
+                id="all-gaming-interest"
                 type="radio"
-                name="all_gaming"
+                name="gaming_interest"
                 value="all"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gaming_interest === "all"}
               />
               <label htmlFor="all-gaming-interest">All</label>
             </div>
