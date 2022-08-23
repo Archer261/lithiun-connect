@@ -222,3 +222,8 @@ background-color: rgb(177, 52, 56);
 .onboarding form input[type='submit']:active {
     background-color: rgb(238, 157, 169);
     }
+
+    .img-container img {
+        max-width: 50%;
+        max-height: 50%;
+    } 

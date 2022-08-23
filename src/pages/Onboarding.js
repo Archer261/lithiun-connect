@@ -22,9 +22,18 @@ const Onboarding = () => {
     console.log("submitted");
   };
 
-  const handleChange = () => {
-    console.log("change");
+  const handleChange = (e) => {
+    const value =
+      e.target.type === "checkbox" ? e.target.checked : e.target.value;
+    const name = e.target.name;
+
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
+
+  console.log(formData);
 
   return (
     <>
@@ -40,7 +49,7 @@ const Onboarding = () => {
               name="first_name"
               placeholder="First Name"
               required={true}
-              value={""}
+              value={formData.first_name}
               onChange={handleChange}
             />
 
@@ -52,7 +61,7 @@ const Onboarding = () => {
                 name="dob_day"
                 placeholder="DD"
                 required={true}
-                value={""}
+                value={formData.dob_day}
                 onChange={handleChange}
               />
 
@@ -62,7 +71,7 @@ const Onboarding = () => {
                 name="dob_month"
                 placeholder="MM"
                 required={true}
-                value={""}
+                value={formData.dob_month}
                 onChange={handleChange}
               />
 
@@ -72,7 +81,7 @@ const Onboarding = () => {
                 name="dob_year"
                 placeholder="YYYY"
                 required={true}
-                value={""}
+                value={formData.dob_year}
                 onChange={handleChange}
               />
             </div>
@@ -159,7 +168,7 @@ const Onboarding = () => {
               name="about"
               required={true}
               placeholder="I play fps games online..."
-              value={""}
+              value={formData.about}
               onChange={handleChange}
             />
 
@@ -175,7 +184,9 @@ const Onboarding = () => {
               onChange={handleChange}
               required={true}
             />
-            <div className="img-container"></div>
+            <div className="img-container">
+              <img src={formData.url} alt="profile pic preview" />
+            </div>
           </section>
         </form>
       </div>
