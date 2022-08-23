@@ -1,6 +1,7 @@
 @import url(https://fontlibrary.org//face/blogger-sans-bold-otf);
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -17,54 +18,54 @@ h2 {
 .primary-title {
     font-size: 90px;
     color: white;
-	-webkit-text-stroke: 1px #F8F8F8;
-	text-shadow: 0px 2px 4px blue;
+    -webkit-text-stroke: 1px #F8F8F8;
+    text-shadow: 0px 2px 4px blue;
 }
 
 .primary-button {
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
-    background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 42%, rgba(22,22,147,1) 88%) ;
+    background: linear-gradient(172deg, rgba(255, 255, 255, 1) 0%, rgba(255, 0, 0, 1) 42%, rgba(22, 22, 147, 1) 88%);
     padding: 12px 30px;
     border-radius: 30px;
     border: none;
 }
 
 .primary-button:hover {
-    background: linear-gradient(260deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 42%, rgba(22,22,147,1) 88%);
+    background: linear-gradient(260deg, rgba(255, 255, 255, 1) 0%, rgba(255, 0, 0, 1) 42%, rgba(22, 22, 147, 1) 88%);
 }
 
 .secondary-btn {
-  color: rgb(164, 164, 164);
-  background-color: white; 
-  font-weight: 500;
-  font-size: 15px;
-  text-transform: uppercase;
-  padding: 12px 30px;
-  border-radius: 30px;
-  border: solid 2px rgb(164, 164, 164);
-  margin: 6px;
+    color: rgb(164, 164, 164);
+    background-color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: solid 2px rgb(164, 164, 164);
+    margin: 6px;
 
 }
 
 .secondary-btn:hover {
-    color:rgb(80, 80, 80);
-   /* background-color:rgb(185, 183, 183);*/
+    color: rgb(80, 80, 80);
+    /* background-color:rgb(185, 183, 183);*/
     border: solid 2px rgb(80, 80, 80);
 }
 
 /* ----- Nav ----- */
 
 nav {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav .nav-button {
-    color: rgba(22,22,147,1);
-    background-color: rgba(255,255,255);
+    color: rgba(22, 22, 147, 1);
+    background-color: rgba(255, 255, 255);
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 10px;
@@ -85,7 +86,7 @@ nav .logo-container {
 
 nav .logo-container .logo {
     width: 100%;
-    }
+}
 
 /* ----- Home Page ----- */
 .overlay {
@@ -93,9 +94,9 @@ nav .logo-container .logo {
     height: 100vh;
     position: fixed;
     /*background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(42,255,206,1) 100%);*/
-    background-image:url("images/pexels-jeshootscom-442576.jpg");
+    background-image: url("images/pexels-jeshootscom-442576.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 .home {
@@ -109,8 +110,8 @@ nav .logo-container .logo {
     top: 50px;
     left: 0;
     right: 0;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 360px;
     height: 600px;
     background-color: white;
@@ -142,3 +143,82 @@ nav .logo-container .logo {
         background-size:cover;
     }
   }*/
+
+
+
+
+
+
+
+
+/* ----- onBoarding Page ----- */
+.onboarding form {
+    display: flex;
+    justify-content: center;
+}
+
+.onboarding form section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 35%;
+    text-align: start;
+}
+
+.onboarding form input {
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 15px;
+    border: solid 2px rgb(164, 164, 164);
+    border-radius: 10px;
+
+}
+
+.onboarding form input::-webkit-outer-spin-button,
+.onboarding form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.onboarding form label {
+    margin: 10px 0;
+}
+
+.onboarding form .multiple-input-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.onboarding form .multiple-input-container input {
+    margin-right: 10px;
+
+}
+
+.onboarding form .multiple-input-container label {
+    padding: 10px;
+    border: solid 2px rgb(164, 164, 164);
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+.onboarding form input[type='radio'] {
+    display: none;
+}
+
+.onboarding form input[type='number'] {
+    width: 10%;
+}
+
+.onboarding form input[type='radio']:checked + label {
+border: solid 2px rgba(22, 22, 147, 1);
+}
+
+.onboarding form input[type='submit']:hover {
+background-color: rgb(177, 52, 56);
+}
+
+.onboarding form input[type='submit']:active {
+    background-color: rgb(238, 157, 169);
+    }
