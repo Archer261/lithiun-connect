@@ -1,16 +1,16 @@
 const ChatContainer = () => {
   return (
     <div className="chat-container">
-      <ChatHeader />
+      {/* <ChatHeader /> */}
 
       <div>
         <button className="option">Links</button>
         <button className="option">Chat</button>
       </div>
 
-      <LinksDisplay />
+      {/* <LinksDisplay /> */}
 
-      <ChatDisplay />
+      {/* <ChatDisplay /> */}
     </div>
   );
 };
